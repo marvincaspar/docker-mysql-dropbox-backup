@@ -14,6 +14,7 @@ $ docker run \
   -e MYSQL_USER=root \
   -e MYSQL_PASSWORD=root \
   -e MYSQL_HOST=mysql \
+  -e DROPBOX_PREFIX=PROJECT_NAME \
   -e DROPBOX_ACCESS_TOKEN=YOUR_TOKEN \
   -e SCHEDULE=@daily \
   suin/mysql-backup-dropbox
