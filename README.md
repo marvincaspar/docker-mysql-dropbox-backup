@@ -17,7 +17,7 @@ $ docker run \
   -e DROPBOX_PREFIX=PROJECT_NAME \
   -e DROPBOX_ACCESS_TOKEN=YOUR_TOKEN \
   -e SCHEDULE=@daily \
-  suin/mysql-backup-dropbox
+  mc388/mysql-dropbox-backup
 ```
 
 ## Environment variables
