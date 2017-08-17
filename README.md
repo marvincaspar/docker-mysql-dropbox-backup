@@ -11,6 +11,7 @@ $ docker run \
   --restart=always \
   --log-opt max-size=1m \
   --log-opt max-file=5 \
+  -e MYSQL_DATABASE=anydb \
   -e MYSQL_USER=root \
   -e MYSQL_PASSWORD=root \
   -e MYSQL_HOST=mysql \
@@ -25,6 +26,7 @@ $ docker run \
 - `MYSQLDUMP_OPTIONS` mysqldump options (default: --quote-names --quick --add-drop-table --add-locks --allow-keywords --disable-keys --extended-insert --single-transaction --create-options --comments --net_buffer_length=16384)
 - `MYSQL_HOST` the mysql host *required*
 - `MYSQL_PORT` the mysql port (default: 3306)
+- `MYSQL_DATABASE` the mysql database *required*
 - `MYSQL_USER` the mysql user *required*
 - `MYSQL_PASSWORD` the mysql password *required*
 - `DROPBOX_PREFIX` path prefix in your Dropbox (default: empty)
