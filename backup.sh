@@ -12,4 +12,4 @@ mysqldump $MYSQL_HOST_OPTS $MYSQLDUMP_OPTIONS $MYSQL_DATABASE \
          -T - \
          --silent \
          --output /dev/null \
-         https://content.dropboxapi.com/1/files_put/auto/$DROPBOX_PREFIX$MYSQL_DATABASE.sql.gz
+         https://content.dropboxapi.com/2/files/upload/auto/$DROPBOX_PREFIX$MYSQL_DATABASE.sql.gz
